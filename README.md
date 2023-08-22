@@ -13,3 +13,6 @@ PHP Curl 组件
 Mysql>5.6
 直接把程序丢进这环境下进行访问，会显示可视化安装步骤，跟着步骤进行数据库连接就可以了。
 ![image](https://github.com/codehub666/94list/assets/81606392/641d6050-e69d-4237-9d6b-0e97affc3bde)
+
+# 作者邮箱
+a94author@outlook.com
