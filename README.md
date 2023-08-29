@@ -19,3 +19,5 @@ Mysql>5.6
 a94author@outlook.com
 # 原作者官网
 https://api.94speed.com/
+# 演示地址
+https://www.uy5.net/discuss/19115.html
