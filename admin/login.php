@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * 登录
  * 开源仓库地址：https://github.com/codehub666/94list.git
