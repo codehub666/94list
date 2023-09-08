@@ -34,3 +34,4 @@ if (isset($commonActions[$type])) {
     echo $data;
 }
 
+?>
