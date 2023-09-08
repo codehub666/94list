@@ -83,7 +83,7 @@ const App = {
 		get_file(dir) { 
 			this.selectedValues = [];
 			this.taskstate = true
-			axios.post('/api.php/', 'type=get_list&shorturl=' + this.shorturl + '&dir=' + dir + '&root=0&pwd=' + this.pass + '&page=1&num=1000&order=time')
+			axios.post('/api.php', 'type=get_list&shorturl=' + this.shorturl + '&dir=' + dir + '&root=0&pwd=' + this.pass + '&page=1&num=1000&order=time')
 				.then(response => {
 					this.taskstate = false
 					this.list = response.data.list 
@@ -100,7 +100,7 @@ const App = {
 			};
 			var addedIndex = this.rw_list.push(data) - 1;
 
-			axios.post('/api.php/', 'type=down_file&fs_id=' + fs_id + '&time=' + timestamp + '&uk=' + uk + '&sign=' + sign + '&randsk=' + randsk + '&share_id=' + shareid + '')
+			axios.post('/api.php', 'type=down_file&fs_id=' + fs_id + '&time=' + timestamp + '&uk=' + uk + '&sign=' + sign + '&randsk=' + randsk + '&share_id=' + shareid + '')
 				.then(response => {
 					if (response.data.success) {
 						this.rw_list[addedIndex].dlink = response.data.data.dlink;
