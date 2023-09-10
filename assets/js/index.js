@@ -186,7 +186,7 @@ const App = {
 				this.taskstate = false;
 				return
 			}
-			axios.post('/api.php/', 'type=get_list&shorturl=' + this.shorturl + '&dir=&root=0&pwd=' + this.pass + '&page=1&num=1000&order=time')
+			axios.post('/api.php', 'type=get_list&shorturl=' + this.shorturl + '&dir=&root=0&pwd=' + this.pass + '&page=1&num=1000&order=time')
 				.then(response => {
 					if (response.data.success) {
 						this.uk = response.data.data.uk 
