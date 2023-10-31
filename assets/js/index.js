@@ -30,6 +30,13 @@ const App = {
 				this.$message.success('检测链接存在密码，已为您自动输入')
 				this.pass = password;
 			}
+			const regex2 = /提取码:\s?([a-zA-Z0-9_-]+)/;
+			const match2 = newValue.match(regex2);
+			if (match2 && match2[1]) {
+				const password = match2[1];
+				this.$message.success('检测链接存在密码，已为您自动输入')
+				this.pass = password;
+			}
 		},
 		DownDialog(newVal) {
 			if (!newVal) {
