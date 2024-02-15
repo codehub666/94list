@@ -22,5 +22,5 @@ https://api.94speed.com/
 # 演示地址
 https://www.uy5.net/discuss/19115.html
 # 其他
-基于laravel开发 : https://github.com/huankong233/94list-laravel
-yuantuo666同学 :https://github.com/yuantuo666/baiduwp-php
+基于laravel开发 : https://github.com/huankong233/94list-laravel 
+yuantuo666同学 :  https://github.com/yuantuo666/baiduwp-php
