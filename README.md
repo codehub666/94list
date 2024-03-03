@@ -21,7 +21,7 @@ a94author@outlook.com
 https://api.94speed.com/
 # 演示地址
 窝：https://www.uy5.net/discuss/19115.html  
-其他网友：https://58.87.88.194/
+B群管理RIO：https://58.87.88.194/
 # 其他
 基于laravel开发 : https://github.com/huankong233/94list-laravel  
 yuantuo666同学 :  https://github.com/yuantuo666/baiduwp-php
