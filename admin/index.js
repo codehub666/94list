@@ -49,7 +49,13 @@
  			if (this.add_user.getinfo == false) {
  				return this.$message.error('获取信息后在进行添加操作');
  			}
- 			axios.post('/api.php', 'type=add&cookie=' + this.add_user.cookie + '&name=' + this.add_user.name + '&vip_type=' + this.add_user.vip_type + '')
+      //  'type=add&cookie=' + this.add_user.cookie + '&name=' + this.add_user.name + '&vip_type=' + this.add_user.vip_type + ''
+ 			axios.post('/api.php',{
+        type: 'add',
+        cookie: this.add_user.cookie,
+        name: this.add_user.name,
+        vip_type: this.add_user.vip_type,
+      } )
  				.then(response => {
  					if (response.data.success == true) {
  						this.add_user.getinfo = false;
@@ -70,7 +76,11 @@
  				return this.$message.error('啊啊啊，你提交了个寂寞');
  			}
  			this.add_user.loading = true;
- 			axios.post('/api.php', 'type=get_bd_info&cookie=' + this.add_user.cookie)
+      //  'type=get_bd_info&cookie=' + this.add_user.cookie
+ 			axios.post('/api.php', {
+        type: 'get_bd_info',
+        cookie: this.add_user.cookie,
+      })
  				.then(response => {
  					this.add_user.loading = false;
  					if (response.data.success == true) {
@@ -93,7 +103,15 @@
  			this.add_bd_user_dialog = !this.add_bd_user_dialog;
  		},
  		revise_info() {
- 			axios.post('/api.php/', 'type=revise_info&title=' + this.config.title + '&AnnounceSwitch=' + this.config.AnnounceSwitch + '&Announce=' + this.config.Announce + '&user_agent=' + this.config.user_agent + '&cookie=' + this.config.cookie + '')
+      // 'type=revise_info&title=' + this.config.title + '&AnnounceSwitch=' + this.config.AnnounceSwitch + '&Announce=' + this.config.Announce + '&user_agent=' + this.config.user_agent + '&cookie=' + this.config.cookie + ''
+ 			axios.post('/api.php/', {
+        type:'revise_info',
+        title: this.config.title,
+        AnnounceSwitch: this.config.AnnounceSwitch,
+        Announce: this.config.Announce,
+        user_agent: this.config.user_agent,
+        cookie: this.config.cookie,
+      })
  				.then(response => {
  					if (response.data.success == true) {
  						this.$message({
