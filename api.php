@@ -14,8 +14,6 @@ try {
 } catch (Exception $th) {
 }
 
-var_dump($_POST);
-
 $type = $_POST['type'];
 $adminActions = [
     'get_account_list' => 'get_account_list',
