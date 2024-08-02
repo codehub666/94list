@@ -10,7 +10,7 @@ require_once(__DIR__ . "/function.php");
 
 try {
   $post = json_decode(file_get_contents("php://input"), true);
-  $_POST = array_merge($_POST,$post);
+  $_POST = array_merge($_POST,$post??[]);
 } catch (Exception $th) {
 }
 
